@@ -2,15 +2,20 @@
 #include "main.h"
 
 /**
- * main - This is the ebtry point. - a program tha prints the number
- * of arguments passed into it
+ * main - Entry point
  * @argc: number of command line arguments
  * @argv: array that contains the program command line arguments
  * Return: (0) if successful
  */
 
-int main(int agrc, char *agrv[] __atribute__((unsused)))
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	int i;
+
+	while (i < argc)
+	{
+		printf("%s\n", argv[i]);
+		i++;
+	}
 	return (0);
 }
