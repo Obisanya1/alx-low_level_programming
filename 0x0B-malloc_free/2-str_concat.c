@@ -37,5 +37,5 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; j <= limit; k++, j++)
 		string[k] = s2[j];
 
-	return (sring);
+	return (string);
 }
